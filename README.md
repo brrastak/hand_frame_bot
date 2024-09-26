@@ -1,6 +1,6 @@
 # Handframe bot
 
-A simple bot that receives a symbol and returns it, surrounded by several (random number; up to 5) layers of hands pointing at it. The color changes from light to dark or vice versa (also randomly):
+A simple telegram bot that receives a symbol and returns it, surrounded by several (random number; up to 5) layers of hands pointing at it. The color changes from light to dark or vice versa (also randomly):
 
 ```text
 👇🏼👇🏼👇🏼👇🏼👇🏼
