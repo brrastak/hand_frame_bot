@@ -30,6 +30,11 @@ async fn message_handler(
 
     if let Some(text) = msg.text() {
 
+        if text.chars().count() > 2 {
+
+            return Ok(())
+        }
+
         let style: FrameStyle;
         let layers: usize;
         {
@@ -41,7 +46,7 @@ async fn message_handler(
             else {
                 FrameStyle::DarkCenter
             };
-            layers = rng.gen_range(1..=5);
+            layers = rng.gen_range(1..=hand_frame::max_layers_number());
         }
 
         let frame = hand_frame::new(text, layers, style).unwrap();
